@@ -43,7 +43,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 setup(
     name='django-test',
     version=version,
-    description="""A collection of utilites to facilitates unit and function tests.""",
+    description="""A collection of utilities to facilitates unit and function tests.""",
     long_description=readme + '\n\n' + history,
     author='thanos vassilakis',
     author_email='thanosv@gmail.com',
