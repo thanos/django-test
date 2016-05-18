@@ -18,7 +18,7 @@ from pyquery import PyQuery as pq
 
 
 class FormTests(TestCase):
-    def test_edit_source(self, route_label, model_class, pk, **changed_fields):
+    def test_edit_form(self, route_label, model_class, pk, **changed_fields):
         obj = model_class.objects.get(pk=pk)
         response = self.client.get(reverse( route_label, kwargs={'pk': pk}))
         doc = pq(response.content)
